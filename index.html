@@ -140,6 +140,9 @@
                     <button onclick="navigate('articles')" id="nav-articles" class="nav-btn text-gray-500 font-medium border-b-2 border-transparent pb-1 transition-colors hover:text-emerald-800">
                         Catatan Mata Kuliah
                     </button>
+                    <button onclick="navigate('practice')" id="nav-practice" class="nav-btn text-gray-500 font-medium border-b-2 border-transparent pb-1 transition-colors hover:text-emerald-800">
+                        Latihan
+                    </button>
                 </nav>
 
                 <!-- Tombol Hamburger Mobile -->
@@ -162,6 +165,9 @@
                 </button>
                 <button onclick="navigate('articles'); toggleMobileMenu();" id="mobile-nav-articles" class="text-left py-2 font-medium text-gray-600 border-l-4 border-transparent pl-3">
                     Catatan Mata Kuliah
+                </button>
+                <button onclick="navigate('practice'); toggleMobileMenu();" id="mobile-nav-practice" class="text-left py-2 font-medium text-gray-600 border-l-4 border-transparent pl-3">
+                    Latihan
                 </button>
             </div>
         </div>
@@ -610,9 +616,214 @@
 
 
 
+        <!-- HALAMAN ke 4: KUMPULAN SOAL -->
+<section id="practice" class="hidden-section bg-[#eef2f5] p-6 sm:p-10 rounded-3xl">
+    <div class="mb-10 text-center max-w-2xl mx-auto">
+        <h2 class="font-serif text-3xl font-bold text-gray-800 mb-2">Kumpulan Soal & Latihan</h2>
+        <p class="text-gray-500 text-sm">Pilih mata kuliah di bawah ini untuk mengakses bank soal, latihan UTS, UAS, dan kuis.</p>
+    </div>
 
+    <!-- Grid 7 Mata Kuliah (Kumpulan Soal) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+        <!-- MK 1: Pendidikan Anti Korupsi -->
+        <article class="animate-pop-card delay-1 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Pendidikan Anti Korupsi</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-500 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Abdy Ihdal Umam, M.Psi., Psikolog.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Kumpulan latihan soal karakter integritas, studi kasus korupsi, dan evaluasi etika moral.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-amber-400 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
 
+        <!-- MK 2: Strategi Belajar Mengajar -->
+        <article class="animate-pop-card delay-2 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Strategi Belajar Mengajar</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-600 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Oni Marliana Susianti, M.Pd.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Kumpulan soal metode pembelajaran, studi kasus pedagogis, dan latihan soal ujian.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-slate-500 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- MK 3: Media Pembelajaran -->
+        <article class="animate-pop-card delay-3 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Media Pembelajaran</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-500 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Qy Atqiya, M.Pd.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Latihan soal pilihan ganda & esai seputar pengembangan media berbasis teknologi dan visual PAI.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-emerald-500 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- MK 4: Kewirausahaan -->
+        <article class="animate-pop-card delay-4 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Kewirausahaan</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-cyan-50 flex items-center justify-center text-cyan-500 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Hafni Syahida Farah Rahma, M.Pd.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Kumpulan soal analisis bisnis syariah, konsep technopreneurship, dan evaluasi finansial.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-cyan-500 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- MK 5: Bahasa Inggris 1 -->
+        <article class="animate-pop-card delay-5 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Bahasa Inggris 1</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-500 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Diah Nova Anggraini, M.Psi.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Latihan soal grammar, reading comprehension, dan terjemahan teks Islamic Studies.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-blue-600 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- MK 6: Metodologi Penelitian PAI -->
+        <article class="animate-pop-card delay-6 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Metodologi Penelitian PAI</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-800 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Muhamad Abdillah, M.Pd.
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Kumpulan soal analisis proposal, teknik riset kualitatif & kuantitatif, serta kisi-kisi ujian.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-amber-800 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- MK 7: Bahasa Arab 1 -->
+        <article class="animate-pop-card delay-7 soft-card bg-white rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between border border-white">
+            <div>
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-1">Bank Soal • UTS / UAS</span>
+                        <h3 class="font-serif text-lg font-bold text-gray-800 leading-snug">Bahasa Arab 1</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 text-lg shadow-inner">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-700 font-medium mb-3">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Raushan Fikri Adam, Lc., MIRKH
+                </p>
+                <p class="text-gray-500 text-xs leading-relaxed mb-6">
+                    Latihan soal Nahwu-Shorof, qira'ah, dan evaluasi kosa kata (mufradat) bahasa Arab.
+                </p>
+            </div>
+            <div>
+                <!-- Bar Warna Timbul -->
+                <div class="h-2.5 w-full bg-purple-600 rounded-full mb-4 shadow-sm"></div>
+                <a href="URL_LINK_DRIVE_SOAL_ANDA_DI_SINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-emerald-800 hover:text-emerald-600 transition-colors">
+                    Buka Soal <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
 
 
 
@@ -643,7 +854,7 @@
 
         // Navigasi Antar Halaman/Section
         function navigate(sectionId) {
-            const sections = ['home', 'schedule', 'articles'];
+            const sections = ['home', 'schedule', 'articles', 'practice'];
             sections.forEach(id => {
                 const section = document.getElementById(id);
                 if (section) {
@@ -661,7 +872,8 @@
             const navBtnMap = {
                 'home': 'nav-home',
                 'schedule': 'nav-schedule',
-                'articles': 'nav-articles'
+                'articles': 'nav-articles',
+                'practice': 'nav-practice'
             };
 
             Object.keys(navBtnMap).forEach(key => {
